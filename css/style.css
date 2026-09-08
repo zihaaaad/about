@@ -141,34 +141,41 @@ img { max-width: 100%; height: auto; display: block; }
 #about .about-content p { font-size: 1.05rem; margin-bottom: 1.5rem; }
 
 .grid-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem; }
-.project-card, .blog-card { background-color: var(--card-bg); border-radius: var(--border-radius); box-shadow: var(--card-shadow); overflow: hidden; display: flex; flex-direction: column; transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease; height: 100%; }
-.project-card:hover, .blog-card:hover { transform: translateY(-6px); box-shadow: var(--card-hover-shadow); }
-.card-image-container { width: 100%; height: 220px; overflow: hidden; }
-.card-image-container img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease; }
-.project-card:hover .card-image-container img, .blog-card:hover .card-image-container img { transform: scale(1.05); }
-.card-content { padding: 1.5rem; flex-grow: 1; display: flex; flex-direction: column; }
-.card-content h3 { margin-top: 0; margin-bottom: 0.75rem; font-size: 1.4rem; }
-.card-content h3 a { color: var(--dark-bg); text-decoration: none; }
-.card-content h3 a:hover, .card-content h3 a:focus { color: var(--primary-color); text-decoration: underline; }
-
-.blog-card .card-content h3, .blog-card .card-content h3 a,
-.blog-card .card-content .summary,
-.blog-card .card-content .date,
-.blog-card .card-footer-links a {
-    font-family: var(--font-bangla-serif);
+.project-card, .blog-card { 
+    background-color: var(--card-bg); 
+    border-radius: 8px; 
+    border: 1px solid var(--border-color);
+    box-shadow: var(--card-shadow); 
+    overflow: hidden; 
+    display: flex; 
+    flex-direction: column; 
+    transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease, border-color var(--transition-speed) ease; 
+    height: 100%; 
 }
-.blog-card .card-content h3 { font-weight: 600; }
-.blog-card .card-content .summary { line-height: 1.8; }
+.project-card:hover, .blog-card:hover { 
+    transform: translateY(-4px); 
+    border-color: #b8daff;
+    box-shadow: 0 12px 24px rgba(0, 123, 255, 0.08); 
+}
+.card-content { padding: 1.8rem; flex-grow: 1; display: flex; flex-direction: column; }
+.card-content h3 { margin-top: 0; margin-bottom: 0.75rem; font-size: 1.35rem; font-weight: 700; }
+.card-content h3 a { color: var(--dark-bg); text-decoration: none; transition: color 0.2s ease; }
+.card-content h3 a:hover, .card-content h3 a:focus { color: var(--primary-color); text-decoration: none; }
 
-.card-content .description, .card-content .summary { font-size: 0.95rem; color: var(--secondary-color); flex-grow: 1; margin-bottom: 1rem; }
-.card-content .tags { margin-bottom: 1rem; }
-.card-content .tags span { background-color: #e9ecef; color: var(--secondary-color); padding: 0.3em 0.7em; margin-right: 0.5em; margin-bottom: 0.5em; display: inline-block; border-radius: 4px; font-size: 0.8rem; font-weight: 500; }
-.card-footer-links { margin-top: auto; padding-top: 1rem; border-top: 1px solid var(--border-color); }
-.card-footer-links a { font-size: 0.9rem; font-weight: 500; text-transform: capitalize; }
-.card-footer-links a.btn-sm { padding: 0.5rem 1rem; margin-right: 0.5rem; }
-.blog-card .card-footer-links a { color: var(--primary-color); font-weight: 500; }
-.blog-card .card-footer-links a:hover, .blog-card .card-footer-links a:focus { color: var(--primary-hover); }
-.blog-card .card-content .date { font-size: 0.85rem; color: #888; margin-bottom: 0.75rem; }
+.card-content .description { font-size: 0.95rem; color: #495057; line-height: 1.6; flex-grow: 1; margin-bottom: 1.25rem; }
+.card-content .tags { margin-bottom: 1.25rem; display: flex; flex-wrap: wrap; gap: 0.4rem; }
+.card-content .tags span { 
+    background-color: #eef4ff; 
+    color: #0056b3; 
+    padding: 0.25rem 0.65rem; 
+    border-radius: 4px; 
+    font-size: 0.78rem; 
+    font-weight: 600; 
+    letter-spacing: 0.02em;
+}
+.card-footer-links { margin-top: auto; padding-top: 1rem; border-top: 1px solid #edf2f7; display: flex; gap: 0.75rem; }
+.card-footer-links a { font-size: 0.85rem; font-weight: 600; text-transform: none; text-decoration: none; }
+.card-footer-links a.btn-sm { padding: 0.45rem 1rem; border-radius: 5px; }
 
 /* Category Filter Styles */
 .category-filters {

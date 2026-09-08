@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zihad Hasan</title>
-    <!-- Google Fonts (Roboto for English, Noto Serif Bengali for Bangla) -->
+    <title>Zihad Hasan | Software Engineer & AI Educator</title>
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Noto+Serif+Bengali:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <!-- Main Stylesheet -->
     <link rel="stylesheet" href="css/style.css">
-    <!-- Favicon (Create a favicon.png and place in images/ folder) -->
+    <!-- Favicon -->
     <link rel="icon" href="images/favicon.png" type="image/png">
 </head>
 <body>
@@ -18,13 +18,12 @@
     <header id="main-header">
         <div class="container">
             <a href="index.html" id="logo">
-                <!-- Optional: <img src="images/profile.png" alt="Logo" class="header-logo-profile-pic"> -->
                 Zihad Hasan
             </a>
             <nav id="main-nav">
                 <ul>
                     <li><a href="index.html" class="nav-link">Home</a></li>
-                    <li><a href="blog.html" class="nav-link">Blog</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
                     <li><a href="#projects" class="nav-link">Projects</a></li>
                     <li><a href="#contact" class="nav-link">Contact</a></li>
                 </ul>
@@ -41,9 +40,9 @@
             <div class="hero-text">
                 <h1>Hi, I'm <span class="highlight">Zihad Hasan</span></h1>
                 <p class="tagline">Software Engineer & Generative AI Educator</p>
-                <p class="intro-text">I build full-stack web platforms, offline-first desktop tools, and practical AI integrations. I also train and mentor emerging technologists at the As-Sunnah Skill Development Institute.</p>
+                <p class="intro-text">I build full-stack web platforms, offline-first desktop applications, and practical AI integrations. I also train and mentor emerging technologists at the As-Sunnah Skill Development Institute.</p>
                 <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
                     <a href="mailto:zihad.connects@gmail.com" class="btn btn-secondary">Get In Touch</a>
                 </div>
             </div>
@@ -60,20 +59,129 @@
             <div class="container">
                 <h2 class="section-title">About Me</h2>
                 <div class="about-content">
-                    <p>Hello! I am Zihad Hasan, a software engineer and educator based in Dhaka, Bangladesh. I specialize in building full-stack web platforms, native desktop utilities, and practical AI integrations that solve real operational challenges for teams and communities.</p>
+                    <p>Hello! I am Zihad Hasan, a software engineer and educator based in Dhaka, Bangladesh. I specialize in building full-stack web platforms, native desktop utilities, and practical AI integrations that solve real operational challenges for teams and organizations.</p>
                     <p>Currently, I serve as a Trainer at the As-Sunnah Skill Development Institute (an initiative of the As-Sunnah Foundation), where I lead hands-on courses in Generative AI, digital literacy, and modern web development. Teaching is a core passion of mine—I love breaking down complex technical workflows into accessible, practical knowledge that empowers learners to build real things.</p>
-                    <p>When I'm not in the classroom, I build production software across web, mobile, and desktop. Some of my recent work includes <strong>Rupantor</strong> (a desktop font manager with Adobe integration), <strong>Chuti</strong> (an offline-first leave management suite), and <strong>EchoScript</strong> (a background audio recorder powered by Gemini AI). I focus on clean architecture, reliable local storage, and high-performance interfaces.</p>
+                    <p>When I'm not in the classroom, I engineer production software across web, mobile, and desktop. Some of my recent open-source work includes <strong>Rupantor</strong> (a desktop font manager with Adobe After Effects integration), <strong>Chuti</strong> (an offline-first leave management suite), and <strong>EchoScript</strong> (a background audio recorder powered by Gemini AI). I care deeply about clean architecture, reliable local data storage, and high-performance user interfaces.</p>
                 </div>
             </div>
         </section>
 
-        <!-- Projects Section -->
+        <!-- Featured Projects Section -->
         <section id="projects" class="content-section alt-bg">
             <div class="container">
-                <h2 class="section-title">My Projects</h2>
-                <div id="projects-container" class="grid-container">
-                    <!-- Projects will be loaded here by JavaScript -->
-                    <p class="loading-message">Loading projects...</p>
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="grid-container">
+
+                    <!-- Project 1: Rupantor -->
+                    <div class="project-card">
+                        <div class="card-content">
+                            <h3><a href="https://zihaaaad.github.io/Rupantor/" target="_blank" rel="noopener noreferrer">Rupantor</a></h3>
+                            <p class="description">Native desktop font management suite with Adobe After Effects/Bridge script automation, native OS font registry syncing, and an offline-first licensing system.</p>
+                            <div class="tags">
+                                <span>Electron</span>
+                                <span>React 19</span>
+                                <span>TypeScript</span>
+                                <span>Firebase</span>
+                                <span>Desktop</span>
+                            </div>
+                            <div class="card-footer-links">
+                                <a href="https://zihaaaad.github.io/Rupantor/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">Live Demo</a>
+                                <a href="https://github.com/zihaaaad/Rupantor" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-secondary">View Code</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: Chuti -->
+                    <div class="project-card">
+                        <div class="card-content">
+                            <h3><a href="https://zihaaaad.github.io/Chuti/" target="_blank" rel="noopener noreferrer">Chuti (ছুটি)</a></h3>
+                            <p class="description">Offline-first Leave Management System designed for institutions and offices. Features automated quota tracking, sandwich rule calculations, and local office LAN network sharing.</p>
+                            <div class="tags">
+                                <span>Next.js</span>
+                                <span>TypeScript</span>
+                                <span>SQLite (WAL)</span>
+                                <span>Tailwind CSS</span>
+                                <span>LAN Sharing</span>
+                            </div>
+                            <div class="card-footer-links">
+                                <a href="https://zihaaaad.github.io/Chuti/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">Live Demo</a>
+                                <a href="https://github.com/zihaaaad/Chuti" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-secondary">View Code</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: EchoScript -->
+                    <div class="project-card">
+                        <div class="card-content">
+                            <h3><a href="https://github.com/zihaaaad/EchoScript" target="_blank" rel="noopener noreferrer">EchoScript</a></h3>
+                            <p class="description">High-fidelity concurrent background audio recorder and speech-to-text pipeline integrating the Google Gemini API for real-time multilingual transcription.</p>
+                            <div class="tags">
+                                <span>Flutter</span>
+                                <span>Dart</span>
+                                <span>Google Gemini API</span>
+                                <span>Audio Processing</span>
+                                <span>Android</span>
+                            </div>
+                            <div class="card-footer-links">
+                                <a href="https://github.com/zihaaaad/EchoScript" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-secondary">View Code</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 4: VerifEye -->
+                    <div class="project-card">
+                        <div class="card-content">
+                            <h3><a href="https://github.com/zihaaaad/VerifEye-AI-Image-Detector" target="_blank" rel="noopener noreferrer">VerifEye — AI Image Detector</a></h3>
+                            <p class="description">Chrome extension leveraging Google Gemini Vision APIs to analyze, authenticate, and flag AI-generated imagery directly within web pages in real-time.</p>
+                            <div class="tags">
+                                <span>JavaScript</span>
+                                <span>Chrome Extension</span>
+                                <span>Manifest v3</span>
+                                <span>Gemini Vision</span>
+                            </div>
+                            <div class="card-footer-links">
+                                <a href="https://github.com/zihaaaad/VerifEye-AI-Image-Detector" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-secondary">View Code</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 5: Jontro -->
+                    <div class="project-card">
+                        <div class="card-content">
+                            <h3><a href="https://zihaaaad.github.io/Jontro/" target="_blank" rel="noopener noreferrer">Jontro — Audio Converter</a></h3>
+                            <p class="description">Fast, modern desktop conversion utility supporting multi-file batch extraction to high-bitrate MP3s with theme customization and zero setup requirements.</p>
+                            <div class="tags">
+                                <span>Electron</span>
+                                <span>React</span>
+                                <span>TypeScript</span>
+                                <span>FFmpeg</span>
+                                <span>Desktop</span>
+                            </div>
+                            <div class="card-footer-links">
+                                <a href="https://zihaaaad.github.io/Jontro/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">Live Demo</a>
+                                <a href="https://github.com/zihaaaad/Jontro" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-secondary">View Code</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 6: DocuMint -->
+                    <div class="project-card">
+                        <div class="card-content">
+                            <h3><a href="https://github.com/zihaaaad/DocuMint" target="_blank" rel="noopener noreferrer">DocuMint — Document Suite</a></h3>
+                            <p class="description">Offline desktop document processing hub engineered for optical character recognition (OCR), text extraction, and batch format conversions.</p>
+                            <div class="tags">
+                                <span>Python</span>
+                                <span>Tesseract OCR</span>
+                                <span>Pillow</span>
+                                <span>CustomTkinter</span>
+                                <span>Utility</span>
+                            </div>
+                            <div class="card-footer-links">
+                                <a href="https://github.com/zihaaaad/DocuMint" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-secondary">View Code</a>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </section>
@@ -82,21 +190,19 @@
         <section id="contact" class="content-section">
             <div class="container">
                 <h2 class="section-title">Connect With Me</h2>
-                <p class="contact-intro">Whether it's discussing innovative AI applications, educational collaborations, or new tech projects, I'm always keen to connect. Feel free to reach out!</p>
-                <div class="contact-details">
-                    <!--<p><strong>Email:</strong> <a href="mailto:zihad.connects@gmail.com">zihad.connects@gmail.com</a></p>
-                    <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/pkmzihad/" target="_blank" rel="noopener noreferrer">linkedin.com/in/pkmzihad</a></p>
-                     Add more contact methods if you like -->
-                </div>
+                <p class="contact-intro">Whether it's discussing innovative AI applications, educational collaborations, or engineering new software projects, I'm always open to connect.</p>
                 <div class="social-links">
-                    <a href="https://www.facebook.com/pkmzihad10" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="social-icon">
-                        <img src="images/icons/facebook.svg" alt="Facebook">
+                    <a href="https://github.com/zihaaaad" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="social-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/pkmzihad/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="social-icon">
+                        <img src="images/icons/linkedin.svg" alt="LinkedIn">
                     </a>
                     <a href="https://x.com/pkmzihad" target="_blank" rel="noopener noreferrer" aria-label="X (formerly Twitter)" class="social-icon">
                         <img src="images/icons/x-logo.svg" alt="X">
                     </a>
-                    <a href="https://www.linkedin.com/in/pkmzihad/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="social-icon">
-                        <img src="images/icons/linkedin.svg" alt="LinkedIn">
+                    <a href="https://www.facebook.com/pkmzihad10" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="social-icon">
+                        <img src="images/icons/facebook.svg" alt="Facebook">
                     </a>
                 </div>
             </div>
@@ -107,18 +213,11 @@
     <footer id="main-footer">
         <div class="container">
             <p>© <span id="current-year"></span> Zihad Hasan. All Rights Reserved.</p>
-            <p>Designed with <span class="heart">❤️</span> and Coded with Passion. Profound thanks to my teacher, Nasif Muhammad, for his inspiration and support.</p>
+            <p>Designed and built with clean engineering and passion.</p>
         </div>
     </footer>
 
-    <!-- Global API URL (to be used by JS files) -->
-    <script>
-        // IMPORTANT: Replace this with your actual Google Apps Script Web App URL
-        const GOOGLE_SHEET_API_BASE_URL = 'https://script.google.com/macros/s/AKfycbydkFbKZecSOaeAxkVbneusu-sVHLYXQJZLPJAyQLDEHnmKutjn3zzAcLzrhKgY5ebiXQ/exec';
-    </script>
-
     <!-- JavaScript Files -->
     <script src="js/common.js"></script>
-    <script src="js/script.js"></script>
 </body>
 </html>
