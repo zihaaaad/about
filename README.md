@@ -1,36 +1,31 @@
-# Personal Portfolio & Blog
+# Personal Portfolio
 
-A lightweight, responsive personal website and blog built with HTML5, modern CSS, and vanilla JavaScript. Powered by a serverless Google Sheets backend for publishing articles and dynamic project listings without requiring a separate database server.
+A fast, lightweight, and responsive static personal portfolio website built with semantic HTML5, modern CSS3, and vanilla JavaScript. Designed for instant 0ms load times, high accessibility, and seamless mobile responsiveness.
 
 ---
 
-## Architecture Overview
+## Overview
 
-- **Static Frontend:** Plain HTML5, responsive CSS grid/flexbox layouts, and vanilla ES6 JavaScript.
-- **Dynamic Content Engine:** Connects to a Google Apps Script endpoint acting as a serverless JSON API over Google Sheets, allowing new blog posts and portfolio projects to be published instantly by updating a spreadsheet.
-- **Typography & Localization:** Responsive typography pairing Google Fonts (`Roboto` for Latin text and `Noto Serif Bengali` for Bengali content).
-- **Responsive Navigation:** Mobile-friendly drawer navigation with smooth scroll anchors and active state highlighting.
+- **Zero External Dependencies:** Built with pure standard web technologies without external frameworks or database runtimes.
+- **Instant Performance:** Pure static HTML and optimized CSS with sub-second page loads.
+- **Featured Software Showcase:** Highlights flagship production systems across desktop, web, and mobile (Rupantor, Chuti, EchoScript, VerifEye, Jontro, DocuMint).
+- **Responsive Navigation:** Accessible mobile drawer menu and smooth anchor scrolling.
 
 ## Directory Structure
 
 ```text
-├── index.html        # Main landing page with hero, bio, and project showcase
-├── blog.html         # Blog index fetching published articles from Sheets API
-├── blog-post.html    # Single blog article view with dynamic parameter routing
+├── index.html        # Single-page personal portfolio and project showcase
 ├── css/
-│   └── style.css     # CSS styling and color palette
+│   └── style.css     # Clean CSS styling and responsive layout rules
 ├── js/
-│   ├── common.js     # Mobile navigation, smooth scrolling, and sticky header
-│   ├── script.js     # Project showcase renderer
-│   ├── blog-list.js  # Article catalog fetch and pagination
-│   └── blog-post.js  # Single article parser and renderer
-├── images/           # Static icons, social logos, and media assets
-└── fonts/            # Local fallback font assets
+│   └── common.js     # Lightweight UI interactions (mobile navigation, smooth scroll)
+├── images/           # Profile photo, social SVG icons, and favicon
+└── fonts/            # Local typography fallback assets
 ```
 
-## Local Setup
+## Local Development
 
-To preview this site locally:
+To run this site locally on your machine:
 
 1. **Clone the repository:**
    ```bash
@@ -39,7 +34,7 @@ To preview this site locally:
    ```
 
 2. **Open in browser:**
-   Open `index.html` directly in your browser, or run a lightweight local server:
+   Open `index.html` directly in any web browser, or serve it locally with:
    ```bash
    # Using Python
    python -m http.server 8000
@@ -49,7 +44,7 @@ To preview this site locally:
    ```
 
 3. **Deploy to GitHub Pages:**
-   This project is ready to host on GitHub Pages. Go to **Settings** > **Pages** and select the `main` branch (root directory) as the build source.
+   This project is deployed to GitHub Pages via the `main` branch.
 
 ## License
 
