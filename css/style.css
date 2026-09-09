@@ -1,10 +1,10 @@
 /* ==========================================================================
    Zihad Hasan - Portfolio Stylesheet
-   Modern, Responsive & High-Performance Pure CSS
+   Modern, Fully Responsive & High-Performance Pure CSS
    ========================================================================== */
 
 /* === Google Fonts Import === */
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Noto+Sans+Bengali:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Noto+Sans+Bengali:wght@400;500;600;700&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap');
 
 /* === Local Font Fallback for Bengali === */
 @font-face {
@@ -15,25 +15,25 @@
     font-display: swap;
 }
 
-/* === CSS Custom Properties (Theme Tokens) === */
+/* === CSS Custom Properties (Design Tokens) === */
 :root {
     /* Brand Colors */
     --primary: #2563eb;
     --primary-hover: #1d4ed8;
     --primary-light: #eff6ff;
     --primary-border: #bfdbfe;
-    --primary-glow: rgba(37, 99, 235, 0.15);
+    --primary-glow: rgba(37, 99, 235, 0.16);
 
     /* Neutral Colors */
     --text-main: #0f172a;
-    --text-muted: #475569;
+    --text-muted: #334155;
     --text-subtle: #64748b;
     --text-light: #94a3b8;
     
     --bg-page: #ffffff;
     --bg-alt: #f8fafc;
     --bg-card: #ffffff;
-    --bg-glass: rgba(255, 255, 255, 0.9);
+    --bg-glass: rgba(255, 255, 255, 0.92);
     
     --border-subtle: #e2e8f0;
     --border-hover: #cbd5e1;
@@ -196,6 +196,7 @@ h2.section-title {
     border: 1.5px solid transparent;
     white-space: nowrap;
     line-height: 1.4;
+    min-height: 44px;
 }
 
 .btn-icon {
@@ -236,16 +237,17 @@ h2.section-title {
 }
 
 .btn-sm {
-    padding: 0.45rem 0.9rem;
-    font-size: 0.82rem;
+    padding: 0.5rem 0.95rem;
+    font-size: 0.85rem;
     border-radius: var(--radius-sm);
+    min-height: 38px;
 }
 
 /* === Main Header & Navigation === */
 #main-header {
     background-color: var(--bg-glass);
-    backdrop-filter: blur(14px);
-    -webkit-backdrop-filter: blur(14px);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
     border-bottom: 1px solid var(--border-subtle);
     position: sticky;
     top: 0;
@@ -259,13 +261,14 @@ h2.section-title {
 }
 
 #main-header.sticky-header {
-    box-shadow: 0 4px 20px rgba(15, 23, 42, 0.06);
+    box-shadow: 0 4px 20px rgba(15, 23, 42, 0.08);
 }
 
 .header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
 #logo {
@@ -275,7 +278,7 @@ h2.section-title {
 }
 
 .logo-text {
-    font-size: 1.25rem;
+    font-size: 1.3rem;
     font-weight: 800;
     color: var(--text-main);
     letter-spacing: -0.03em;
@@ -305,8 +308,8 @@ h2.section-title {
     display: block;
     color: var(--text-muted);
     font-weight: 500;
-    font-size: 0.92rem;
-    padding: 0.5rem 0.9rem;
+    font-size: 0.95rem;
+    padding: 0.5rem 0.95rem;
     border-radius: var(--radius-md);
     transition: var(--transition-fast);
 }
@@ -368,10 +371,10 @@ h2.section-title {
 
 /* === Hero Section === */
 #hero {
-    background: radial-gradient(circle at top right, rgba(37, 99, 235, 0.04), transparent 50%),
-                radial-gradient(circle at bottom left, rgba(14, 165, 233, 0.03), transparent 50%),
+    background: radial-gradient(circle at 85% 20%, rgba(37, 99, 235, 0.05), transparent 45%),
+                radial-gradient(circle at 15% 80%, rgba(14, 165, 233, 0.04), transparent 45%),
                 var(--bg-page);
-    padding: clamp(3rem, 7vw, 5.5rem) 0;
+    padding: clamp(3.5rem, 8vw, 6rem) 0;
     min-height: calc(100vh - var(--header-height));
     display: flex;
     align-items: center;
@@ -394,12 +397,12 @@ h2.section-title {
     display: inline-flex;
     align-items: center;
     gap: 0.55rem;
-    padding: 0.35rem 0.9rem;
+    padding: 0.4rem 0.95rem;
     background-color: #f0fdf4;
     border: 1px solid #bbf7d0;
     border-radius: var(--radius-full);
     font-family: var(--font-mono);
-    font-size: 0.76rem;
+    font-size: 0.78rem;
     font-weight: 500;
     color: #166534;
     margin-bottom: 1.25rem;
@@ -432,7 +435,7 @@ h2.section-title {
     font-weight: 800;
     letter-spacing: -0.035em;
     line-height: 1.15;
-    margin-bottom: 0.6rem;
+    margin-bottom: 0.65rem;
 }
 
 #hero h1 .highlight {
@@ -533,9 +536,9 @@ h2.section-title {
 /* Focus Areas Grid */
 .focus-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
-    gap: 1.5rem;
-    max-width: 1060px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.25rem;
+    max-width: 1100px;
     margin: 0 auto;
 }
 
@@ -581,7 +584,7 @@ h2.section-title {
 /* === Projects Grid Section === */
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
 }
 
@@ -681,7 +684,8 @@ h2.section-title {
 }
 
 .card-footer-links .btn {
-    flex: 1 1 auto;
+    flex: 1 1 0;
+    min-width: 110px;
 }
 
 /* === Contact & Connect Section === */
@@ -717,7 +721,7 @@ h2.section-title {
     align-items: center;
     gap: 0.65rem;
     font-family: var(--font-mono);
-    font-size: clamp(0.95rem, 2vw, 1.1rem);
+    font-size: clamp(0.88rem, 2.5vw, 1.05rem);
     font-weight: 600;
     color: var(--primary);
     background-color: var(--primary-light);
@@ -725,6 +729,8 @@ h2.section-title {
     padding: 0.85rem 1.6rem;
     border-radius: var(--radius-full);
     transition: var(--transition-normal);
+    max-width: 100%;
+    word-break: break-word;
 }
 
 .contact-email-btn:hover, .contact-email-btn:focus-visible {
@@ -738,7 +744,7 @@ h2.section-title {
 /* Social Links Grid */
 .social-links-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
     max-width: 800px;
     margin: 0 auto;
@@ -852,10 +858,17 @@ h2.section-title {
    Responsive Media Queries
    ========================================================================== */
 
-/* Tablets & Small Laptops (<= 991px) */
+/* Laptops & Desktops (1024px to 1199px) */
+@media (max-width: 1199.98px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Tablets & Small Laptops (768px to 991px) */
 @media (max-width: 991.98px) {
     :root {
-        --header-height: 64px;
+        --header-height: 66px;
     }
 
     .hero-container {
@@ -877,6 +890,14 @@ h2.section-title {
         margin-left: auto;
         margin-right: auto;
     }
+
+    .focus-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .social-links-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 /* Mobile Devices (<= 767px) */
@@ -885,7 +906,11 @@ h2.section-title {
         font-size: 15px;
     }
 
-    /* Mobile Header & Drawer Navigation */
+    /* Mobile Header & Full-Width Drawer Navigation */
+    .header-container {
+        position: static;
+    }
+
     #mobile-menu-toggle {
         display: flex;
     }
@@ -897,10 +922,10 @@ h2.section-title {
         left: 0;
         right: 0;
         width: 100%;
-        background-color: var(--bg-card);
+        background-color: #ffffff;
         border-bottom: 1px solid var(--border-subtle);
-        box-shadow: var(--shadow-lg);
-        padding: 1rem 1.25rem 1.25rem 1.25rem;
+        box-shadow: 0 12px 30px rgba(15, 23, 42, 0.12);
+        padding: 1rem 1.5rem 1.5rem 1.5rem;
         z-index: 999;
         flex-direction: column;
         align-items: stretch;
@@ -908,7 +933,7 @@ h2.section-title {
 
     #main-nav.active {
         display: flex;
-        animation: slideDown 0.25s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+        animation: slideDown 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
     }
 
     @keyframes slideDown {
@@ -941,36 +966,41 @@ h2.section-title {
 
     /* Hero adjustments */
     #hero {
-        padding: 2.5rem 0;
+        padding: 2.75rem 0;
         min-height: auto;
     }
 
     #hero-profile-pic {
-        width: clamp(160px, 45vw, 220px);
+        width: clamp(170px, 45vw, 220px);
     }
 
     /* Section Header */
     .section-header {
-        margin-bottom: 2rem;
+        margin-bottom: 2.25rem;
     }
 
-    /* Project Cards */
+    /* Focus & Project Cards */
+    .focus-grid {
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+    }
+
     .grid-container {
         grid-template-columns: 1fr;
         gap: 1.25rem;
     }
 
     .card-content {
-        padding: 1.4rem;
+        padding: 1.5rem;
     }
 
     /* Contact Card */
     .contact-card {
-        padding: 2rem 1.25rem;
+        padding: 2.25rem 1.25rem;
     }
 
     .social-links-grid {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(2, 1fr);
     }
 
     /* Footer */
@@ -984,17 +1014,21 @@ h2.section-title {
 /* Extra Small Phones (<= 479px) */
 @media (max-width: 479.98px) {
     .container {
-        padding-left: 1rem;
-        padding-right: 1rem;
+        padding-left: 1.1rem;
+        padding-right: 1.1rem;
     }
 
     .hero-buttons {
         flex-direction: column;
         width: 100%;
+        max-width: 320px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .hero-buttons .btn {
         width: 100%;
+        justify-content: center;
     }
 
     .social-links-grid {
@@ -1004,8 +1038,7 @@ h2.section-title {
     .contact-email-btn {
         width: 100%;
         justify-content: center;
-        font-size: 0.88rem;
-        padding: 0.75rem 1rem;
+        padding: 0.8rem 1rem;
     }
 
     .card-footer-links {
@@ -1014,5 +1047,6 @@ h2.section-title {
 
     .card-footer-links .btn {
         width: 100%;
+        justify-content: center;
     }
 }
