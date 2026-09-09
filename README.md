@@ -7,9 +7,10 @@ A fast, lightweight, and responsive static personal portfolio website built with
 ## Overview
 
 - **Zero External Dependencies:** Built with pure standard web technologies without external frameworks or database runtimes.
+- **Modern Typography:** Typeset with Plus Jakarta Sans and JetBrains Mono for a crisp, professional aesthetic.
 - **Instant Performance:** Pure static HTML and optimized CSS with sub-second page loads.
-- **Featured Software Showcase:** Highlights flagship production systems across desktop, web, and mobile (Rupantor, Chuti, EchoScript, VerifEye, Jontro, DocuMint).
-- **Responsive Navigation:** Accessible mobile drawer menu and smooth anchor scrolling.
+- **Featured Software Showcase:** Highlights flagship production systems across desktop, web, and mobile (Rupantor, Chuti, EchoScript, VerifEye, Jontro, DocuMint, SendFiles).
+- **Responsive Navigation:** Accessible mobile drawer menu, dynamic section spy, and smooth anchor scrolling.
 
 ## Directory Structure
 

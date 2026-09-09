@@ -4,33 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zihad Hasan | Software Engineer & AI Educator</title>
+    <meta name="description" content="Personal portfolio of Zihad Hasan - Software Engineer, Generative AI Educator, and Open Source Creator based in Dhaka, Bangladesh.">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Open Graph / Meta -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Zihad Hasan | Software Engineer & AI Educator">
+    <meta property="og:description" content="Full-stack web platforms, offline-first desktop applications, and practical AI integrations.">
+    <meta property="og:url" content="https://zihaaaad.github.io/about/">
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Noto+Sans+Bengali:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
     <!-- Main Stylesheet -->
     <link rel="stylesheet" href="css/style.css">
+
     <!-- Favicon -->
     <link rel="icon" href="images/favicon.png" type="image/png">
 </head>
 <body>
     <!-- Header Section -->
     <header id="main-header">
-        <div class="container">
+        <div class="container header-container">
             <a href="index.html" id="logo">
-                Zihad Hasan
+                <span class="logo-text">Zihad Hasan</span>
             </a>
-            <nav id="main-nav">
-                <ul>
-                    <li><a href="index.html" class="nav-link">Home</a></li>
+
+            <nav id="main-nav" aria-label="Main Navigation">
+                <ul class="nav-list">
+                    <li><a href="#hero" class="nav-link active">Home</a></li>
                     <li><a href="#about" class="nav-link">About</a></li>
                     <li><a href="#projects" class="nav-link">Projects</a></li>
                     <li><a href="#contact" class="nav-link">Contact</a></li>
                 </ul>
-                <button id="mobile-menu-toggle" aria-label="Toggle Menu" aria-expanded="false">
-                    <span></span><span></span><span></span> 
-                </button>
             </nav>
+
+            <button id="mobile-menu-toggle" aria-label="Toggle Navigation Menu" aria-expanded="false" aria-controls="main-nav">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
         </div>
     </header>
 
@@ -38,16 +53,28 @@
     <section id="hero">
         <div class="container hero-container">
             <div class="hero-text">
+                <div class="status-badge">
+                    <span class="status-dot"></span>
+                    <span class="status-label">Available for Engineering & Mentoring</span>
+                </div>
                 <h1>Hi, I'm <span class="highlight">Zihad Hasan</span></h1>
                 <p class="tagline">Software Engineer & Generative AI Educator</p>
-                <p class="intro-text">I build full-stack web platforms, offline-first desktop applications, and practical AI integrations. I also train and mentor emerging technologists at the As-Sunnah Skill Development Institute.</p>
+                <p class="intro-text">I engineer full-stack web platforms, offline-first desktop applications, and practical AI integrations. I also train and mentor emerging technologists at the As-Sunnah Skill Development Institute in Dhaka, Bangladesh.</p>
                 <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">View Projects</a>
-                    <a href="mailto:zihad.connects@gmail.com" class="btn btn-secondary">Get In Touch</a>
+                    <a href="#projects" class="btn btn-primary">
+                        <span>View Projects</span>
+                        <svg class="btn-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                    <a href="mailto:zihad.connects@gmail.com" class="btn btn-secondary">
+                        <span>Get In Touch</span>
+                        <svg class="btn-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                    </a>
                 </div>
             </div>
             <div class="hero-image">
-                <img src="images/profile.png" alt="Zihad Hasan - Profile Picture" id="hero-profile-pic">
+                <div class="image-wrapper">
+                    <img src="images/profile.png" alt="Zihad Hasan - Profile Picture" id="hero-profile-pic" width="320" height="320">
+                </div>
             </div>
         </div>
     </section>
@@ -57,11 +84,50 @@
         <!-- About Me Section -->
         <section id="about" class="content-section">
             <div class="container">
-                <h2 class="section-title">About Me</h2>
+                <div class="section-header">
+                    <span class="section-badge">Background & Expertise</span>
+                    <h2 class="section-title">About Me</h2>
+                </div>
+                
                 <div class="about-content">
-                    <p>Hello! I am Zihad Hasan, a software engineer and educator based in Dhaka, Bangladesh. I specialize in building full-stack web platforms, native desktop utilities, and practical AI integrations that solve real operational challenges for teams and organizations.</p>
-                    <p>Currently, I serve as a Trainer at the As-Sunnah Skill Development Institute (an initiative of the As-Sunnah Foundation), where I lead hands-on courses in Generative AI, digital literacy, and modern web development. Teaching is a core passion of mine—I love breaking down complex technical workflows into accessible, practical knowledge that empowers learners to build real things.</p>
-                    <p>When I'm not in the classroom, I engineer production software across web, mobile, and desktop. Some of my recent open-source work includes <strong>Rupantor</strong> (a desktop font manager with Adobe After Effects integration), <strong>Chuti</strong> (an offline-first leave management suite), and <strong>EchoScript</strong> (a background audio recorder powered by Gemini AI). I care deeply about clean architecture, reliable local data storage, and high-performance user interfaces.</p>
+                    <p>I am a software engineer and technical educator based in Dhaka, Bangladesh. I specialize in building robust full-stack web applications, native desktop utilities, and practical AI solutions that solve real operational challenges for teams and organizations.</p>
+                    <p>Currently, I serve as a Trainer at the <strong>As-Sunnah Skill Development Institute</strong> (an initiative of the As-Sunnah Foundation), where I lead comprehensive, hands-on courses in Generative AI, digital literacy, and modern web development. Teaching is a central passion of mine—I love breaking down complex technical workflows into accessible, actionable engineering skills that empower learners to build real things.</p>
+                    <p>When I am not in the classroom, I engineer production software across web, mobile, and desktop ecosystems. I care deeply about clean architecture, reliable offline data storage, and high-performance user interfaces.</p>
+                </div>
+
+                <!-- Focus Areas Grid -->
+                <div class="focus-grid">
+                    <div class="focus-card">
+                        <div class="focus-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+                        </div>
+                        <h3>Education & Mentorship</h3>
+                        <p>Training and mentoring emerging engineers at As-Sunnah SDI in Generative AI workflows, prompt engineering, and modern web application development.</p>
+                    </div>
+
+                    <div class="focus-card">
+                        <div class="focus-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                        </div>
+                        <h3>Desktop & System Utilities</h3>
+                        <p>Engineering cross-platform native desktop utilities with Electron, React, TypeScript, OS font registry integrations, and FFmpeg batch pipelines.</p>
+                    </div>
+
+                    <div class="focus-card">
+                        <div class="focus-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                        </div>
+                        <h3>Full-Stack Web & P2P</h3>
+                        <p>Developing responsive, accessible web platforms with Next.js, SQLite WAL mode, real-time WebRTC DataChannels, and local LAN network sharing.</p>
+                    </div>
+
+                    <div class="focus-card">
+                        <div class="focus-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                        </div>
+                        <h3>AI & Automation Engines</h3>
+                        <p>Integrating Google Gemini APIs for multimodal vision detection and speech recognition, alongside Python batch automation engines for enterprise document workflows.</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -69,13 +135,21 @@
         <!-- Featured Projects Section -->
         <section id="projects" class="content-section alt-bg">
             <div class="container">
-                <h2 class="section-title">Featured Projects</h2>
+                <div class="section-header">
+                    <span class="section-badge">Featured Work</span>
+                    <h2 class="section-title">Open Source & Projects</h2>
+                    <p class="section-subtitle">Production-grade software systems engineered with modern stacks and clean architecture.</p>
+                </div>
+
                 <div class="grid-container">
 
                     <!-- Project 1: Rupantor -->
-                    <div class="project-card">
+                    <article class="project-card">
                         <div class="card-content">
-                            <h3><a href="https://zihaaaad.github.io/Rupantor/" target="_blank" rel="noopener noreferrer">Rupantor</a></h3>
+                            <div class="card-header">
+                                <span class="platform-badge">Desktop App</span>
+                                <h3><a href="https://zihaaaad.github.io/Rupantor/" target="_blank" rel="noopener noreferrer">Rupantor</a></h3>
+                            </div>
                             <p class="description">Native desktop font management suite with Adobe After Effects/Bridge script automation, native OS font registry syncing, and an offline-first licensing system.</p>
                             <div class="tags">
                                 <span>Electron</span>
@@ -85,16 +159,25 @@
                                 <span>Desktop</span>
                             </div>
                             <div class="card-footer-links">
-                                <a href="https://zihaaaad.github.io/Rupantor/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">Live Demo</a>
-                                <a href="https://github.com/zihaaaad/Rupantor" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-secondary">View Code</a>
+                                <a href="https://zihaaaad.github.io/Rupantor/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+                                    <span>Live Demo</span>
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                                </a>
+                                <a href="https://github.com/zihaaaad/Rupantor" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-secondary">
+                                    <span>View Code</span>
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                                </a>
                             </div>
                         </div>
-                    </div>
+                    </article>
 
                     <!-- Project 2: Chuti -->
-                    <div class="project-card">
+                    <article class="project-card">
                         <div class="card-content">
-                            <h3><a href="https://zihaaaad.github.io/Chuti/" target="_blank" rel="noopener noreferrer">Chuti (ছুটি)</a></h3>
+                            <div class="card-header">
+                                <span class="platform-badge">Web Platform</span>
+                                <h3><a href="https://zihaaaad.github.io/Chuti/" target="_blank" rel="noopener noreferrer">Chuti (<span class="bangla-text">ছুটি</span>)</a></h3>
+                            </div>
                             <p class="description">Offline-first Leave Management System designed for institutions and offices. Features automated quota tracking, sandwich rule calculations, and local office LAN network sharing.</p>
                             <div class="tags">
                                 <span>Next.js</span>
@@ -104,34 +187,49 @@
                                 <span>LAN Sharing</span>
                             </div>
                             <div class="card-footer-links">
-                                <a href="https://zihaaaad.github.io/Chuti/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">Live Demo</a>
-                                <a href="https://github.com/zihaaaad/Chuti" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-secondary">View Code</a>
+                                <a href="https://zihaaaad.github.io/Chuti/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+                                    <span>Live Demo</span>
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                                </a>
+                                <a href="https://github.com/zihaaaad/Chuti" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-secondary">
+                                    <span>View Code</span>
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                                </a>
                             </div>
                         </div>
-                    </div>
+                    </article>
 
                     <!-- Project 3: EchoScript -->
-                    <div class="project-card">
+                    <article class="project-card">
                         <div class="card-content">
-                            <h3><a href="https://github.com/zihaaaad/EchoScript" target="_blank" rel="noopener noreferrer">EchoScript</a></h3>
+                            <div class="card-header">
+                                <span class="platform-badge">Android / AI App</span>
+                                <h3><a href="https://github.com/zihaaaad/EchoScript" target="_blank" rel="noopener noreferrer">EchoScript</a></h3>
+                            </div>
                             <p class="description">High-fidelity concurrent background audio recorder and speech-to-text pipeline integrating the Google Gemini API for real-time multilingual transcription.</p>
                             <div class="tags">
                                 <span>Flutter</span>
                                 <span>Dart</span>
-                                <span>Google Gemini API</span>
+                                <span>Gemini API</span>
                                 <span>Audio Processing</span>
                                 <span>Android</span>
                             </div>
                             <div class="card-footer-links">
-                                <a href="https://github.com/zihaaaad/EchoScript" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-secondary">View Code</a>
+                                <a href="https://github.com/zihaaaad/EchoScript" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-secondary">
+                                    <span>View Code</span>
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                                </a>
                             </div>
                         </div>
-                    </div>
+                    </article>
 
                     <!-- Project 4: VerifEye -->
-                    <div class="project-card">
+                    <article class="project-card">
                         <div class="card-content">
-                            <h3><a href="https://github.com/zihaaaad/VerifEye-AI-Image-Detector" target="_blank" rel="noopener noreferrer">VerifEye — AI Image Detector</a></h3>
+                            <div class="card-header">
+                                <span class="platform-badge">Browser Extension</span>
+                                <h3><a href="https://github.com/zihaaaad/VerifEye-AI-Image-Detector" target="_blank" rel="noopener noreferrer">VerifEye — AI Detector</a></h3>
+                            </div>
                             <p class="description">Chrome extension leveraging Google Gemini Vision APIs to analyze, authenticate, and flag AI-generated imagery directly within web pages in real-time.</p>
                             <div class="tags">
                                 <span>JavaScript</span>
@@ -140,15 +238,21 @@
                                 <span>Gemini Vision</span>
                             </div>
                             <div class="card-footer-links">
-                                <a href="https://github.com/zihaaaad/VerifEye-AI-Image-Detector" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-secondary">View Code</a>
+                                <a href="https://github.com/zihaaaad/VerifEye-AI-Image-Detector" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-secondary">
+                                    <span>View Code</span>
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                                </a>
                             </div>
                         </div>
-                    </div>
+                    </article>
 
                     <!-- Project 5: Jontro -->
-                    <div class="project-card">
+                    <article class="project-card">
                         <div class="card-content">
-                            <h3><a href="https://zihaaaad.github.io/Jontro/" target="_blank" rel="noopener noreferrer">Jontro — Audio Converter</a></h3>
+                            <div class="card-header">
+                                <span class="platform-badge">Desktop Utility</span>
+                                <h3><a href="https://zihaaaad.github.io/Jontro/" target="_blank" rel="noopener noreferrer">Jontro — Audio Converter</a></h3>
+                            </div>
                             <p class="description">Fast, modern desktop conversion utility supporting multi-file batch extraction to high-bitrate MP3s with theme customization and zero setup requirements.</p>
                             <div class="tags">
                                 <span>Electron</span>
@@ -158,16 +262,25 @@
                                 <span>Desktop</span>
                             </div>
                             <div class="card-footer-links">
-                                <a href="https://zihaaaad.github.io/Jontro/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">Live Demo</a>
-                                <a href="https://github.com/zihaaaad/Jontro" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-secondary">View Code</a>
+                                <a href="https://zihaaaad.github.io/Jontro/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+                                    <span>Live Demo</span>
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                                </a>
+                                <a href="https://github.com/zihaaaad/Jontro" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-secondary">
+                                    <span>View Code</span>
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                                </a>
                             </div>
                         </div>
-                    </div>
+                    </article>
 
                     <!-- Project 6: DocuMint -->
-                    <div class="project-card">
+                    <article class="project-card">
                         <div class="card-content">
-                            <h3><a href="https://zihaaaad.github.io/DocuMint/" target="_blank" rel="noopener noreferrer">DocuMint</a></h3>
+                            <div class="card-header">
+                                <span class="platform-badge">Python CLI & Engine</span>
+                                <h3><a href="https://zihaaaad.github.io/DocuMint/" target="_blank" rel="noopener noreferrer">DocuMint</a></h3>
+                            </div>
                             <p class="description">Universal document automation and batch dispatch engine in Python. Merges tabular datasets into Word OpenXML templates, compiles vector PDFs, and automates multi-threaded SMTP/Outlook delivery.</p>
                             <div class="tags">
                                 <span>Python</span>
@@ -177,30 +290,45 @@
                                 <span>SQLite Audit</span>
                             </div>
                             <div class="card-footer-links">
-                                <a href="https://zihaaaad.github.io/DocuMint/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">Live Demo</a>
-                                <a href="https://github.com/zihaaaad/DocuMint" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-secondary">View Code</a>
+                                <a href="https://zihaaaad.github.io/DocuMint/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+                                    <span>Live Demo</span>
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                                </a>
+                                <a href="https://github.com/zihaaaad/DocuMint" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-secondary">
+                                    <span>View Code</span>
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                                </a>
                             </div>
                         </div>
-                    </div>
+                    </article>
 
                     <!-- Project 7: SendFiles -->
-                    <div class="project-card">
+                    <article class="project-card">
                         <div class="card-content">
-                            <h3><a href="https://zihaaaad.github.io/SendFiles/" target="_blank" rel="noopener noreferrer">SendFiles</a></h3>
+                            <div class="card-header">
+                                <span class="platform-badge">P2P Web App</span>
+                                <h3><a href="https://zihaaaad.github.io/SendFiles/" target="_blank" rel="noopener noreferrer">SendFiles</a></h3>
+                            </div>
                             <p class="description">Web-based peer-to-peer file transfer engine powered by WebRTC DataChannels. Direct browser-to-browser data streaming with zero cloud storage and no file size limits.</p>
                             <div class="tags">
                                 <span>WebRTC</span>
                                 <span>JavaScript</span>
                                 <span>PeerJS</span>
-                                <span>P2P Networking</span>
+                                <span>P2P Streaming</span>
                                 <span>Web App</span>
                             </div>
                             <div class="card-footer-links">
-                                <a href="https://zihaaaad.github.io/SendFiles/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">Live Demo</a>
-                                <a href="https://github.com/zihaaaad/SendFiles" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-secondary">View Code</a>
+                                <a href="https://zihaaaad.github.io/SendFiles/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+                                    <span>Live Demo</span>
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                                </a>
+                                <a href="https://github.com/zihaaaad/SendFiles" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-secondary">
+                                    <span>View Code</span>
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                                </a>
                             </div>
                         </div>
-                    </div>
+                    </article>
 
                 </div>
             </div>
@@ -209,21 +337,61 @@
         <!-- Contact Section -->
         <section id="contact" class="content-section">
             <div class="container">
-                <h2 class="section-title">Connect With Me</h2>
-                <p class="contact-intro">Whether it's discussing innovative AI applications, educational collaborations, or engineering new software projects, I'm always open to connect.</p>
-                <div class="social-links">
-                    <a href="https://github.com/zihaaaad" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="social-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-                    </a>
-                    <a href="https://www.linkedin.com/in/pkmzihad/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="social-icon">
-                        <img src="images/icons/linkedin.svg" alt="LinkedIn">
-                    </a>
-                    <a href="https://x.com/pkmzihad" target="_blank" rel="noopener noreferrer" aria-label="X (formerly Twitter)" class="social-icon">
-                        <img src="images/icons/x-logo.svg" alt="X">
-                    </a>
-                    <a href="https://www.facebook.com/pkmzihad10" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="social-icon">
-                        <img src="images/icons/facebook.svg" alt="Facebook">
-                    </a>
+                <div class="contact-card">
+                    <div class="section-header">
+                        <span class="section-badge">Get In Touch</span>
+                        <h2 class="section-title">Let's Connect</h2>
+                        <p class="contact-intro">Whether you want to discuss innovative AI workflows, training collaborations, software architecture, or explore new engineering ideas, I'm always open to connect.</p>
+                    </div>
+
+                    <div class="contact-actions">
+                        <a href="mailto:zihad.connects@gmail.com" class="contact-email-btn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                            <span>zihad.connects@gmail.com</span>
+                        </a>
+                    </div>
+
+                    <div class="social-links-grid">
+                        <a href="https://github.com/zihaaaad" target="_blank" rel="noopener noreferrer" class="social-item" aria-label="GitHub">
+                            <div class="social-icon-box">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                            </div>
+                            <div class="social-text">
+                                <span class="social-title">GitHub</span>
+                                <span class="social-handle">@zihaaaad</span>
+                            </div>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/pkmzihad/" target="_blank" rel="noopener noreferrer" class="social-item" aria-label="LinkedIn">
+                            <div class="social-icon-box">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                            </div>
+                            <div class="social-text">
+                                <span class="social-title">LinkedIn</span>
+                                <span class="social-handle">in/pkmzihad</span>
+                            </div>
+                        </a>
+
+                        <a href="https://x.com/pkmzihad" target="_blank" rel="noopener noreferrer" class="social-item" aria-label="X (formerly Twitter)">
+                            <div class="social-icon-box">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                            </div>
+                            <div class="social-text">
+                                <span class="social-title">X (Twitter)</span>
+                                <span class="social-handle">@pkmzihad</span>
+                            </div>
+                        </a>
+
+                        <a href="https://www.facebook.com/pkmzihad10" target="_blank" rel="noopener noreferrer" class="social-item" aria-label="Facebook">
+                            <div class="social-icon-box">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                            </div>
+                            <div class="social-text">
+                                <span class="social-title">Facebook</span>
+                                <span class="social-handle">pkmzihad10</span>
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -231,9 +399,17 @@
 
     <!-- Footer Section -->
     <footer id="main-footer">
-        <div class="container">
-            <p>© <span id="current-year"></span> Zihad Hasan. All Rights Reserved.</p>
-            <p>Designed and built with clean engineering and passion.</p>
+        <div class="container footer-container">
+            <div class="footer-left">
+                <p class="footer-copy">© <span id="current-year"></span> Zihad Hasan. All Rights Reserved.</p>
+                <p class="footer-sub">Software Engineer & Educator • Dhaka, Bangladesh</p>
+            </div>
+            <div class="footer-right">
+                <a href="#hero" class="back-to-top" aria-label="Back to top">
+                    <span>Back to top</span>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 15l-6-6-6 6"/></svg>
+                </a>
+            </div>
         </div>
     </footer>
 
